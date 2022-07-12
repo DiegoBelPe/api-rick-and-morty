@@ -10,7 +10,7 @@ const CharactersList = () => {
   return (
     <div>
       {characters.map(character => (  
-        <Character character={character} />
+        <Character key={character.id} character={character} />
         
       ))}
     </div>
